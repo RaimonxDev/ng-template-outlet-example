@@ -7,10 +7,10 @@ import { TableComponentModule } from '../shared/ui/table.component';
   selector: 'app-home',
   template: `
     <!-- No templates provided, will use default layout -->
-    <app-table [data]="employees"></app-table>
+    <!-- <app-table [data2]="employees"></app-table> -->
 
     <!-- Basic configured template -->
-    <app-table [data]="employees">
+    <app-table [data2]="employees">
       <ng-template #headers>
         <th>First</th>
         <th>Last</th>
@@ -18,7 +18,7 @@ import { TableComponentModule } from '../shared/ui/table.component';
     </app-table>
 
     <!-- Highly configured template with conditional elements -->
-    <app-table [data]="inventory">
+    <app-table [data2]="inventory">
       <ng-template #headers>
         <th>Item</th>
         <th>Price</th>
@@ -94,4 +94,4 @@ export class HomeComponent {
     ]),
   ],
 })
-export class HomeModule {}
+export class HomeModule { }
